@@ -1,0 +1,66 @@
+/* Styles for the main container of My Interest section */
+.myInterest {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items along the cross-axis */
+  color: black; /* Set text color to black */
+}
+
+/* Styles for the heading within My Interest section */
+.myInterest h1 {
+  margin: 3% 0; /* Add margin at the top and bottom */
+  color: #000080; /* Set heading text color to dark blue */
+}
+
+/* Styles for the container of interest sections */
+.interestSection {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid columns */
+  grid-column-gap: 16px; /* Add gap between grid columns */
+  grid-template-rows: auto auto; /* Set grid rows to auto height */
+  max-width: 75vw; /* Set maximum width for the section */
+  margin-bottom: 4%; /* Add margin at the bottom */
+}
+
+/* Styles for individual hobby sections */
+.hobby {
+  border: 3px solid black; /* Add border around each hobby section */
+  margin-bottom: 5%; /* Add margin at the bottom */
+  text-align: center; /* Center text within each hobby section */
+}
+
+/* Styles for hover effect on hobby sections */
+.hobby:hover {
+  transition: 0.5s ease; /* Add smooth transition on hover */
+}
+
+/* Styles for the description container within hobby sections */
+.hobbyDescription {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly along the main axis */
+  align-items: center; /* Center items along the cross-axis */
+  padding: 0 3%; /* Add padding to the description container */
+}
+
+/* Styles for heading within hobby description */
+.hobbyDescription h3 {
+  max-width: 10%; /* Set maximum width for the heading */
+  text-align: center; /* Center text within the heading */
+}
+
+/* Styles for images within hobby sections */
+.hobby img {
+  width: 295px; /* Set fixed width for images */
+  height: 200px; /* Set fixed height for images */
+}
+
+/* Styles for the main content container */
+main {
+  animation: fadeIn 3s; /* Apply fade-in animation with a duration of 3 seconds */
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+  0% { opacity: 0; } /* Start with opacity 0 */
+  100% { opacity: 1; } /* End with opacity 1 */
+}

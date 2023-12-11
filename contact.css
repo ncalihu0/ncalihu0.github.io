@@ -1,0 +1,132 @@
+/* Styles for valid input fields */
+input:valid {
+    border: 2px solid green; /* Green border for valid inputs */
+}
+
+/* Styles for invalid input fields */
+input:invalid {
+    border: 2px solid red; /* Red border for invalid inputs */
+}
+
+/* Styles for the entire HTML document */
+html {
+    height: 1500px; /* Set a minimum height for the HTML document */
+}
+
+/* Styles for the body of the document */
+body {
+    font-family: Arial, sans-serif; /* Set the default font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styles for contact headers */
+.contactheader, .contactheader2 {
+    padding: 10px 0; /* Add padding to the top and bottom */
+    text-align: center; /* Center text */
+    color: #000080; /* Set text color to dark blue */
+}
+
+/* Styles for the navigation bar */
+nav {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around the navigation bar */
+}
+
+/* Styles for navigation list */
+nav ul {
+    list-style: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styles for navigation list items */
+nav li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add margin between list items */
+}
+
+/* Styles for the main content container */
+.main {
+    max-width: 800px; /* Set maximum width for the main content */
+    margin: 20px auto; /* Center the content horizontally */
+    text-align: center; /* Center the text within the container */
+}
+
+/* Styles for the contact form */
+.contactform {
+    text-align: left; /* Align form elements to the left */
+    max-width: 400px; /* Set maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    height: 100vh; /* Set form height to 100% of the viewport height */
+}
+
+/* Styles for form fieldsets */
+fieldset {
+    margin-bottom: 20px; /* Add margin at the bottom of fieldsets */
+    border: 1px solid #ddd; /* Add a border around fieldsets */
+    padding: 10px; /* Add padding inside fieldsets */
+}
+
+/* Styles for legend within fieldsets */
+legend {
+    font-weight: bold; /* Make legend text bold */
+    color: #000080; /* Set legend text color to dark blue */
+}
+
+/* Styles for labels */
+label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Add margin at the bottom of labels */
+    color: #000080; /* Set label text color to dark blue */
+}
+
+/* Styles for common input and form elements */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="datetime-local"],
+input[type="number"],
+textarea,
+select {
+    width: 100%; /* Set width to 100% */
+    padding: 8px; /* Add padding to input elements */
+    margin-bottom: 10px; /* Add margin at the bottom of input elements */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+}
+
+/* Styles for range input */
+input[type="range"] {
+    width: 100%; /* Set width to 100% */
+}
+
+/* Styles for textarea */
+textarea {
+    height: 100px; /* Set height for textarea */
+}
+
+/* Styles for form buttons container */
+.form-buttons {
+    text-align: center; /* Center align form buttons */
+}
+
+/* Styles for submit and reset buttons */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #000080; /* Background color for buttons */
+    color: white; /* Text color for buttons */
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-right: 10px; /* Add margin to the right of buttons */
+}
+
+/* Hover styles for submit and reset buttons */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #000080; /* Darker background color on hover */
+    opacity: 0.5; /* Reduce opacity on hover */
+}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character set, viewport, and styling -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="contact.css" rel="stylesheet" type="text/css" />
+    <!-- Title of the page -->
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">ABOUT ME</div>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myInterest.html">My Interest</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Contact Header Section -->
+        <h1 class="contactheader">
+            Contact Me
+        </h1>
+        <h4 class="contactheader2">
+            I'm looking forward to hearing from you!
+        </h4>
+
+        <!-- Contact Form Section -->
+        <form class="contactform" id="myForm" onsubmit="return validateForm()">
+            <!-- Personal Information Fieldset -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <!-- Name Input -->
+                <label for="input-name">Name:</label>
+                <input type="text" id="input-name" name="name" placeholder="Name" required>
+
+                <!-- Email Input -->
+                <label for="input-email">Email Address:</label>
+                <input type="email" id="input-email" name="email" placeholder="Email Address" required>
+
+                <!-- Telephone Input -->
+                <label for="input-tel">Telephone:</label>
+                <input type="tel" id="input-tel" name="telephone" placeholder="Telephone" required>
+            </fieldset>
+
+            <!-- Details Fieldset -->
+            <fieldset>
+                <legend>Details</legend>
+                <!-- Date Input -->
+                <label for="event-date">Date:</label>
+                <input type="datetime-local" id="event-date" name="eventDate" required>
+
+                <!-- Priority Radio Buttons -->
+                <label>Priority:</label>
+                <input type="radio" id="high-priority" name="priority" value="high">
+                <label for="high-priority">High</label>
+                <input type="radio" id="medium-priority" name="priority" value="medium">
+                <label for="medium-priority">Medium</label>
+                <input type="radio" id="low-priority" name="priority" value="low">
+                <label for="low-priority">Low</label>
+
+                <!-- Age Input -->
+                <label for="quantity">Age</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="100" required>
+
+                <!-- Range Slider -->
+                <label for="range">Range of how much you like my website:</label>
+                <input type="range" id="range" name="range" min="1" max="100" step="1" required>
+            </fieldset>
+
+            <!-- Information Fieldset -->
+            <fieldset>
+                <legend>Information</legend>
+                <!-- Comments Textarea -->
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50" required></textarea>
+
+                <!-- Hobby Rating Select -->
+                <label for="category">Rate your favorite hobby:</label>
+                <select id="category" name="category" required>
+                    <option value="option1">I love it</option>
+                    <option value="option2">It's alright</option>
+                    <option value="option3">I don't like it too much</option>
+                </select>
+
+                <!-- Datalist Input -->
+                <label for="datalistInput">Choose Favorite hobby of mine:</label>
+                <input list="browsers" id="datalistInput" name="datalistInput" required>
+                <datalist id="browsers">
+                    <option value="Painting"></option>
+                    <option value="Reading"></option>
+                    <option value="Going to Cafes"></option>
+                    <option value="Building Legos"></option>
+                    <option value="Collecting Vinyls"></option>
+                    <option value="Reading Manga"></option>
+                    <option value="Listening to music"></option>
+                    <option value="Shopping"></option>
+                </datalist>
+            </fieldset>
+
+            <!-- Submit and Reset buttons -->
+            <div class="form-buttons">
+                <input type="submit" value="Submit" id="input-submit">
+                <input type="reset" value="Cancel/Reset">
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Copyright Information -->
+        <p class="copyright">Copyright &copy; 2023, By Nicole Calihua Hernandez</p>
+        <!-- LinkedIn Profile Link -->
+        <a href="https://www.linkedin.com/in/nicole-calihua-hernandez-638b08222/" target="_blank">
+            <img class="linkedin" src="linkedinlogo.png" alt="Linkedin profile">
+        </a>
+    </footer>
+
+</body>
+
+</html>

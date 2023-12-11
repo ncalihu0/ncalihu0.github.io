@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information for character set and viewport -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>About Me</title>
+    <!-- Link to external stylesheet -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Include external JavaScript file -->
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">ABOUT ME</div>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="myInterest.html">My Interest</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Biography Section -->
+    <section id="biography" class="biography">
+        <!-- Title -->
+        <h1>Learn More About Me</h1>
+        <!-- Image -->
+        <img src="nicoleCH.png" alt="Image of Nicole CH">
+        <!-- Biography Text -->
+        <p>I am Nicole Calihua Hernandez. I'm currently focusing on an associate degree in IT-Software development at CPCC.
+            I've always been fascinated by the use of technology to solve problems. In a day and age where technology is
+            essential, I want to be someone who makes a change in the world. The reason is simple, I've always loved solving
+            problems. I like using critical thinking. But most importantly, I love learning. In a field where things are
+            consistently improving and innovating, you must be prepared and open to learning. I especially like doing so by
+            reading or watching a video about the topic I'm interested in. I wish to improve my skills and break into tech. I
+            want to enrich the diversity gap and make a change. I hope this reaches individuals who are like me. </p>
+    </section>
+
+    <!-- JavaScript Output Section for the countdown -->
+    <section id="countdown" class="output"></section>
+    <!-- JavaScript Output Section for Current Date and Time -->
+    <section id="theDate" class="output"></section>
+
+    <!-- Inline JavaScript -->
+    <script>
+        // Function to get and display current date and time
+        function getCurrentDateTime() {
+            var currentDateTime = new Date();
+            document.getElementById('theDate').innerHTML = 'Current Date and Time: ' + currentDateTime;
+        }
+
+        // Call the function to display current date and time
+        getCurrentDateTime();
+    </script>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Copyright Information -->
+        <p class="copyright">Copyright &copy; 2023, By Nicole Calihua Hernandez</p>
+        <!-- LinkedIn Profile Link -->
+        <a href="https://www.linkedin.com/in/nicole-calihua-hernandez-638b08222/" target="_blank"><img
+                class="linkedin" src="linkedinlogo.png" alt="Linkedin profile"></a>
+    </footer>
+</body>
+
+</html>
+

@@ -1,0 +1,133 @@
+/* Global styling for all elements */
+* {
+  margin: 0%; /* Set margin to 0% for all elements */
+  padding: 0%; /* Set padding to 0% for all elements */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set font family for all text */
+}
+
+/* Body styling */
+body {
+  height: 1000px; /* Set a fixed height for the body */
+}
+
+/* Navigation bar styling */
+.navbar {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items along the cross-axis */
+  justify-content: space-between; /* Space items evenly along the main axis */
+  padding: 1%; /* Add padding to the navigation bar */
+  background-color: #800020; /* Set background color */
+  color: #fff; /* Set text color to white */
+}
+
+/* Logo styling */
+.logo {
+  font-size: 32px; /* Set font size for the logo */
+  padding: 10px; /* Add padding to the logo */
+  font-family: monospace; /* Set font family for the logo */
+}
+
+/* Navigation links styling */
+.nav-links {
+  display: flex; /* Use flexbox for layout */
+  gap: 1em; /* Set gap between items */
+  font-size: 20px; /* Set font size for navigation links */
+  list-style: none; /* Remove list styling */
+}
+
+/* Navigation link item styling */
+.nav-links li:hover {
+  background-color: #990026; /* Background color on hover */
+  opacity: 0.5; /* Reduce opacity on hover */
+  border-radius: 5px; /* Add border-radius on hover */
+  transition: 0.3s ease; /* Add smooth transition effect */
+}
+
+/* Navigation link styling */
+.nav-links a {
+  color: #fff; /* Set text color to white */
+  text-decoration: none; /* Remove text decoration */
+  font-family: monospace; /* Set font family for navigation links */
+}
+
+/* Biography section styling */
+.biography h1 {
+  text-align: center; /* Center text within the heading */
+}
+
+.biography {
+  color: #000080; /* Set text color for the biography section */
+}
+
+.biography p {
+  padding: 0 5%; /* Add padding to paragraphs */
+  color: #000080; /* Set text color for paragraphs */
+}
+
+.biography img {
+  display: flex; /* Use flexbox for layout */
+  margin: auto; /* Center image horizontally */
+  width: 25%; /* Set width of the image */
+  height: 25%; /* Set height of the image */
+  padding-top: 15px; /* Add padding to the top of the image */
+}
+
+/* Footer styling */
+footer {
+  position: fixed; /* Fix the footer at the bottom of the viewport */
+  bottom: 0; /* Set distance from the bottom */
+  width: 100%; /* Set full width */
+  background-color: #800020; /* Set background color for the footer */
+  height: 55px; /* Set fixed height for the footer */
+}
+
+/* Generic section styling */
+section {
+  text-align: center; /* Center text within the section */
+  padding: 20px; /* Add padding to the section */
+  background-color: #f0f0f0; /* Set background color for the section */
+  margin-bottom: 20px; /* Add margin at the bottom of the section */
+  color: #000080; /* Set text color for the section */
+}
+
+/* Copyright text styling */
+.copyright {
+  float: right; /* Float text to the right */
+  margin: 20px 20px; /* Add margin to the right and top */
+  color: white; /* Set text color to white */
+}
+
+/* LinkedIn icon styling */
+.linkedin {
+  width: 25px; /* Set width for the LinkedIn icon */
+  height: 25px; /* Set height for the LinkedIn icon */
+  display: block; /* Display as block element */
+  margin: 15px 20px; /* Add margin to the top and right */
+  border-radius: 5px; /* Add border-radius to the icon */
+}
+
+/* Media query for responsive design */
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .logo {
+      padding: 5px; /* Reduce padding for the logo on small screens */
+  }
+
+  .nav-links {
+      display: flex; /* Use flexbox for layout */
+      text-align: center; /* Center text within the navigation links */
+  }
+
+  .biography img {
+      width: 40%; /* Adjust width for images on small screens */
+      height: 40%; /* Adjust height for images on small screens */
+  }
+
+  .copyright {
+      font-size: 15px; /* Adjust font size for copyright text on small screens */
+  }
+}
